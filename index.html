@@ -292,9 +292,9 @@
                     <span class="author-block"><sup>2</sup>University of Chinese Academy of Sciences</span>
                     <span class="author-block"><sup>3</sup>Tsinghua University</span>
 
-                    </div>
-                    <h2 class="title"><br>NeurIPS 2025 Spotlight</h2>
-                    </div>
+                  </div>
+
+                  <h2 class="title"><br>NeurIPS 2025 Spotlight</h2>
 
                     <!-- TODO: Remove this line if no equal contribution -->
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
@@ -449,15 +449,15 @@
             MigGPT
           </h2>
           <p class="is-size-5 mb-4">
-            MigGPT works in two stages: identifying target code snippets in the new version and migrating the out-of-tree patch. MigGPT consists of three core modules: the <strong>Retrieval Augmentation Module</strong> (addressing Challenges 1 and 3), the <strong>Retrieval Alignment Module</strong> (addressing Challenge 2), and the <strong>Migration Enhancement Module</strong> (addressing Challenge 4). Each module uses a **Code Fingerprint (CFP)** structure to enhance LLM performance and migration accuracy.
+            MigGPT works in two stages: identifying target code snippets in the new version and migrating the out-of-tree patch. MigGPT consists of three core modules: the <strong>Retrieval Augmentation Module</strong> (addressing Challenges 1 and 3), the <strong>Retrieval Alignment Module</strong> (addressing Challenge 2), and the <strong>Migration Enhancement Module</strong> (addressing Challenge 4). Each module uses a Code Fingerprint (CFP) structure to enhance LLM performance and migration accuracy.
           </p>
         </div>
       </div>
 
       <div class="columns is-centered mt-5">
         <div class="column is-three-quarters has-text-centered">
-          <img src="static/overview.png" alt="Figure 5. Overview of MigGPT" loading="lazy"/>
-          <p class="is-size-6 has-text-grey mt-2">Figure 1. Overview of the MigGPT system architecture.</p>
+          <img src="static/overview.png" alt="Overview of MigGPT" loading="lazy"/>
+          <p class="is-size-6 has-text-grey mt-2">Figure 5. Overview of the MigGPT system architecture.</p>
         </div>
       </div>
       
@@ -479,17 +479,19 @@
       </div>
 
       <div class="columns is-centered mt-5">
-        <div class="column is-half has-text-centered">
+        <div class="column is-two-thirds has-text-centered"> 
           <img src="static/cfp.png" alt="Code Fingerprint Structure" loading="lazy"/>
-          <p class="is-size-6 has-text-grey mt-2">Figure 2. CFP structure details.</p>
-        </div>
-        <div class="column is-half has-text-centered">
-          <img src="static/cfp_step.png" alt="CFP Processing Steps" loading="lazy"/>
-          <p class="is-size-6 has-text-grey mt-2">Figure 3. Steps for generating CFP.</p>
+          <p class="is-size-6 has-text-grey mt-2">Figure 6. Compared to AST, CFP extracts key code structures, and its linear representation enables clearer localization of code modification points.</p>
         </div>
       </div>
       
-    </div>
+      <div class="columns is-centered mt-5">
+        <div class="column is-two-thirds has-text-centered">
+          <img src="static/cfp_step.png" alt="CFP Processing Steps" loading="lazy"/>
+          <p class="is-size-6 has-text-grey mt-2">Figure 7. An example of step-by-step CFP generation.</p>
+        </div>
+      </div>
+      </div>
   </div>
 </section>
 
@@ -504,21 +506,24 @@
           <h2 class="title is-3">
             Results
           </h2>
-          </div>
+        </div>
       </div>
 
       <div class="columns is-centered mt-5">
-        
-        <div class="column is-half has-text-centered">
+        <div class="column is-two-thirds has-text-centered"> 
           <img src="static/retrieval_res.png" alt="Retrieval Results" loading="lazy"/>
+          <p class="is-size-6 has-text-grey mt-2">Figure 1. 检索结果（Retrieval Results）。</p>
         </div>
-        
-        <div class="column is-half has-text-centered">
+      </div>
+      
+      <div class="columns is-centered mt-5">
+        <div class="column is-two-thirds has-text-centered">
           <img src="static/migration_res.png" alt="Migtaion Results" loading="lazy"/>
+          <p class="is-size-6 has-text-grey mt-2">Figure 2. 迁移结果（Migration Results）。</p>
         </div>
-        
       </div>
-      </div>
+
+    </div>
   </div>
 </section>
 
